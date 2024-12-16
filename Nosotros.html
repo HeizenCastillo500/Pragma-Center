@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="icon" href="Logo.png">
+        <title>Pragma Center</title>
+        <link rel="stylesheet" href="Nosotros.css">
+    </head>
+    <body>
+        <section>
+            <div class="Nos">
+                <center>
+                    <h1><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Visión >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></h1>
+                    <br>
+                    <h2>Hacer que todas las personas puedan construir con facilidad y con intuición</h2>
+                    <br>
+                    <br>
+                    <h1><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Misión >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></h1>
+                    <br>
+                    <h2>Nuestra misión es ayudar y brindar herramientas de ayuda para todas las personas</h2>
+                    <br>
+                    <br>
+                    <h1><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Valores >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></h1>
+                    <br>
+                    <h2>
+                        <li>Respeto</li>
+                        <li>Confianza</li>
+                        <li>Empatia</li>
+                        <li>Positividad</li>
+                    </h2>
+                </center>
+            </div>
+        </section>
+
+        <center>
+            <button><a href="index.html">Volver</a></button>
+        </center>
+
+        <script>
+            const button = document.getElementById('movableButton');
+    
+            button.addEventListener('mouseover', () => {
+                const windowWidth = window.innerWidth;
+                const windowHeight = window.innerHeight;
+    
+                const randomX = Math.random() * (windowWidth - button.offsetWidth);
+                const randomY = Math.random() * (windowHeight - button.offsetHeight);
+    
+                button.style.left = randomX + 'px';
+                button.style.top = randomY + 'px';
+            });
+        </script>
+    </body>
+</html>

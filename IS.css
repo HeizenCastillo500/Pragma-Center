@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.IS {
+    background-color: whitesmoke;
+    background: linear-gradient(315deg, #f0f0f0, #cacaca);
+    box-shadow: -20px -20px 60px red,
+                30px 30px 60px purple,
+                -30px 40px 60px blue,
+                30px -20px 60px green;
+    padding: 50px;
+    margin: 30px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 15px; 
+}
+
+button {
+    background-color: gray;
+    border-color: gray;
+    padding: 5%;
+    margin: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

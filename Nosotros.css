@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/487125438/es/foto/herramientas-manuales.jpg?s=612x612&w=0&k=20&c=_HfrLefvKNmBBNLrkyyLgdLLD6YamgyBrp5NS0zPMxM=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    background-color: white;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    width: 20%;
+    height: 20%;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+a:hover {
+    font-size: 55px;
+    color: Grey;
+}

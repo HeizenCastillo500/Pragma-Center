@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/487125438/es/foto/herramientas-manuales.jpg?s=612x612&w=0&k=20&c=_HfrLefvKNmBBNLrkyyLgdLLD6YamgyBrp5NS0zPMxM=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100px;
+    background-color: #000000;
+  }
+  
+  .img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5%;
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: goldenrod;
+  }
+
+  section {
+    padding: 50px;
+    margin: 50px;
+    background-color: #016d37;
+    border-radius: 10px;
+  }
+
+.menu {
+    background-color: black;
+    padding: 10px 0;
+    
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+  }
+
+  .menu ul li {
+    margin: 0 15px;
+  }
+
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu ul li a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: goldenrod;
+    font-size: 18px;
+    transform: scale(1.1);
+  }
+
+  .carrito {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .productos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .producto {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .producto:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .producto h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+
+  .precio {
+    font-size: 18px;
+    color: #e74c3c;
+    margin: 10px 0;
+  }
+
+  .producto button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .producto button:hover {
+    background-color: #2980b9;
+  }

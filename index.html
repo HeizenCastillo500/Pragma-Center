@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="icon" href="Logo.png">
+        <title>Pragma Center</title>
+        <link rel="stylesheet" href="F Pragma.css">
+    </head>
+    <body>
+        <header>
+            <div class="img">
+              <img src="Logo.png" alt="Logo">
+            </div>
+            <h1 class="title">Pragma Center</h1>
+            <nav class="menu">
+                <ul>
+                  <li><a href="IS.html">Inicio</a></li>
+                  <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                  <li><a href="Contactos.html">Contacto</a></li>
+                  <div class="carrito" onclick="mostrarCarrito()">Ver Carrito(<span id="cantidad-items">0</span>)</div>
+                </ul>
+              </nav>
+        </header>
+        <Section id="01">
+            <h1>En pragma center encontrarás todas las herramientas que necesites para tus proyectos.
+                Encuentra nuestro contacto en la pagina referente en el menú.
+            </h1>
+        </Section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <center>
+                <h2>
+                    Seccion de Productos
+                </h2>
+            </center>
+<br>
+<br>
+<div class="productos">
+  <div class="producto">
+    <img src="Martillo.png" alt="Producto 1">
+    <h3>Martillo</h3>
+    <p class="precio">RD19.99</p>
+    <button onclick="agregarAlCarrito('Martillo', 19.99)">Agregar al carrito</button>
+  </div>
+  <div class="producto">
+    <img src="Cemento.png" alt="Producto 2">
+    <h3>Cemento</h3>
+    <p class="precio">RD29.99</p>
+    <button onclick="agregarAlCarrito('Cemento', 29.99)">Agregar al carrito</button>
+  </div>
+  <div class="producto">
+    <img src="Kit.png" alt="Producto 3">
+    <h3>Kit de Destornilladores</h3>
+    <p class="precio">RD39.99</p>
+    <button onclick="agregarAlCarrito('Kit de Destornilladores', 39.99)">Agregar al carrito</button>
+  </div>
+  <div class="producto">
+    <img src="Casco.png" alt="Producto 4">
+    <h3>Casco</h3>
+    <p class="precio">RD49.99</p>
+    <button onclick="agregarAlCarrito('Casco', 49.99)">Agregar al carrito</button>
+  </div>
+</div>
+
+<div class="carrito-detalles" id="carrito-detalles" style="display: none;">
+  <h2>Carrito de Compras</h2>
+  <ul id="lista-carrito"></ul>
+  <p class="total">Total: RD<span id="total-carrito">0.00</span></p>
+</div>
+
+<script>
+  const carrito = [];
+  let total = 0;
+
+  function agregarAlCarrito(producto, precio) {
+    carrito.push({ producto, precio });
+    total += precio;
+
+    actualizarCarrito();
+  }
+
+  function actualizarCarrito() {
+    document.getElementById('cantidad-items').innerText = carrito.length;
+    const listaCarrito = document.getElementById('lista-carrito');
+    listaCarrito.innerHTML = '';
+    carrito.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.producto} - RD${item.precio.toFixed(2)}`;
+      listaCarrito.appendChild(li);
+    });
+
+    document.getElementById('total-carrito').innerText = total.toFixed(2);
+  }
+
+  function mostrarCarrito() {
+    const carritoDetalles = document.getElementById('carrito-detalles');
+    carritoDetalles.style.display = carritoDetalles.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+        </section>
+    </body>
+</html>
